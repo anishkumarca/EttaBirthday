@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Etta 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts" id="hearts"></div>
+
+    <!-- PASSWORD SCREEN -->
+    <div class="container" id="passwordScreen">
+        <div class="heart">💌</div>
+
+        <h1>A little surprise awaits...</h1>
+        <p class="subtitle">But first, you have to prove you're the right person! 👀</p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="What's something you always call me?"
+            autocomplete="off"
+        >
+
+        <button class="answer-btn" onclick="checkPassword()">
+            Unlock my surprise 💗
+        </button>
+
+        <p class="reaction" id="passwordReaction"></p>
+    </div>
+
+    <!-- WELCOME SCREEN -->
+    <div class="container" id="welcomeScreen" style="display:none;">
+        <div class="heart">💖</div>
+
+        <h1>Correct! 😌</h1>
+        <p class="subtitle">You know your Muthu well! 💗</p>
+
+        <p class="reaction">
+            Okay, birthday boy... let's see how well you know me! 👀
+        </p>
+
+        <button class="answer-btn" onclick="startQuiz()">
+            Let's gooo! 🎀
+        </button>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div class="container" id="quizScreen" style="display:none;">
+        <div class="heart" id="mainHeart">💗</div>
+
+        <div class="progress" id="progress"></div>
+
+        <h1 id="question"></h1>
+        <p class="subtitle" id="subtitle"></p>
+
+        <div class="answer-buttons" id="answerButtons"></div>
+
+        <p class="reaction" id="reaction"></p>
+    </div>
+
+    <!-- BIRTHDAY SCREEN -->
+    <div class="birthday-screen" id="birthdayScreen" style="display:none;">
+
+        <h1 class="birthday-title">Happy Birthday, Etta! 🎂</h1>
+
+        <div class="cake" id="cake">
+            <div class="candles">
+                <div class="candle"><div class="flame"></div></div>
+                <div class="candle"><div class="flame"></div></div>
+                <div class="candle"><div class="flame"></div></div>
+            </div>
+
+            <div class="cake-top"></div>
+            <div class="cake-layer"></div>
+            <div class="cake-bottom"></div>
+            <div class="plate"></div>
+        </div>
+
+        <p class="birthday-message">
+            May your day be filled with happiness, love and beautiful memories! 💗
+        </p>
+
+        <p class="birthday-wish">
+            You deserve all the love and happiness in the world.
+            I hope all your dreams come true. 💕
+        </p>
+
+        <button class="blow-button" id="blowButton">
+            Blow the candles! 🕯️
+        </button>
+
+        <p class="signature">From your Molu 💗</p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
